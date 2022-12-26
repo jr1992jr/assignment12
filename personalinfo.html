@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Registration</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="HTML 5, CSS 3,Javascript">
+  <meta name="description" content="Dynamic Web Development">
+  <meta name="author" content="Jayarr">
+  <meta name="viewport" content="width=device-width, initail-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script scr = "login.js"> </script>
+</head>
+
+<style>
+.registerh1 {
+  background-color: Green;
+  text-align: center;}
+
+  label{padding-bottom: 20px;
+      ;
+  }
+    input {
+      margin-bottom: 20px;
+    }
+
+    #submitbtn{margin-top:50px;
+      color:red;
+    }
+
+    #genderid,#sexorientation{margin-bottom: 20px;
+    }
+
+  </style>
+
+<h1 class="registerh1"> Personal Information </h1>
+<body>
+  <h3> Please enter required information below </h3>
+  <form class="registration">
+<label for: "Name"> Full Name </label>
+<input type="text" id="fullname" placeholder="Optional" option> </input>
+<br>
+<label for="idinfo">Identification Number</label>
+<input type="tel" id=idinfo name="idinfo" placeholder="Min 4 Digits Max 8 " minlength="4" maxlength="8" required> </input>
+
+<br>
+<label for:"DOB" >Date of birth </label>
+<input type="date" required>
+
+<br>
+<label for="Sex"> Sex: </label>
+<input required type="radio" name="sex" value="Male"> Male </input>
+<input type="radio" name="sex" value="Male"> Female </input>
+<input type="radio" name="sex" value="Male"> I Prefer Not To Say </input>
+
+
+
+  <br>
+  <label for="sexorientation"> Sexual Orientation </label>
+         <select id="sexorientation" name=sexorientation required>
+           <option value=""selected disabled> [Select One] </option>
+           <option value="Gay"> Gay </option>
+           <option value="Straight"> Straight </option>
+           <option value="Bisexual"> Bisexual </option>
+           <option value="Queer"> Queer </option>
+           <option value="Lesbian"> Lesbian </option>
+           <option value="Pansexual"> Pansexual </option>
+           <option value="Asexual"> Asexual </option>
+         </select>
+
+<br>
+<label for="genderid"> Gender Identity </label>
+       <select id="genderid" name=genderid required >
+         <option value=""selected disabled> [Select One] </option>
+         <option value="Non Binary"> Non Binary </option>
+         <option value="Gender Expansive"> Gender Expansive </option>
+         <option value="Cigender"> Cigender </option>
+         <option value="Butch"> Butch </option>
+         <option value="Bigender"> Bigender </option>
+         <option value="Androgyne"> Androgyne </option>
+         <option value="Agender"> Agender </option>
+         <option value="Trans"> Trans </option>
+         <option value="Omnigender"> Omnigender </option>
+         <option value="Gender Queer"> Gender Queer </option>
+       </select>
+
+
+
+  <br>
+      <input id="submitbtn" type="submit" value="Submit"> </input>
+           </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+    </html>
