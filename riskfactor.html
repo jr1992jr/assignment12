@@ -13,14 +13,68 @@
 
 <h1> RISK FACTORS </h1>
 
-<ul
+<ul>
   <li> <a href="personalinfo.html" > Personal Information  </a> </li>
   <li> <a href="riskfactor.html"> Risk Factors</a> </li>
   <li> <a href="hepatitis_b_case_reporting_form.pdf" target="_blank"> Hepatitis B Form  </a> </li>
-  <li> <a href="congenital-syphilis-form-2013.pdf" target="_blank"> Congenital Syphilis FormT</a> </li>
-  <li> <a href="chlamydia_and_gonorrhea_case_reporting_form.pdf" target="_blank"> Chlamydia & Gonorrhea Form  </a> </li>
+  <li> <a href="congenital-syphilis-form-2013.pdf" target="_blank"> Congenital Syphilis Form</a> </li>
+  <li> <a href="chlamydia_gonorrhea_case_reporting.html" target="_blank"> Chlamydia & Gonorrhea Form  </a> </li>
 
 </ul>
+
+
+<html>
+  <head>
+    <style>
+
+      body{background-color: tan;}
+      .container {
+        float: left;
+        width: 40%;
+        height: 250px;
+        border: 1px solid black;
+      }
+      input[type="text"] {
+        width: 90%;
+        margin: 5px;
+      }
+
+      input:hover {cursor: pointer;}
+    </style>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+  <body>
+    <P>In the last 12 months drag and drop the option that applies </P> <br>
+
+    <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <caption> Option</caption>
+      <input type="text" id="input1" draggable="true" ondragstart="drag(event)" readonly value="Had Sex With Males">
+      <input type="text" id="input2" draggable="true" ondragstart="drag(event)" readonly value="Had Sex With Females">
+      <input type="text" id="input3" draggable="true" ondragstart="drag(event)" readonly value="Homeless">
+      <input type="text" id="input4" draggable="true" ondragstart="drag(event)" readonly value="Victim of sexual assault">
+      <input type="text" id="input5" draggable="true" ondragstart="drag(event)" readonly value="Incarcerated">
+      <input type="text" id="input6" draggable="true" ondragstart="drag(event)" readonly value="Possible Exposure">
+      <input type="text" id="input7" draggable="true" ondragstart="drag(event)" readonly value="Routine Screening">
+    </div>
+
+    <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <caption> Selected</caption>
+      
+    </div>
+  </body>
+</html>
 
 
 </html>

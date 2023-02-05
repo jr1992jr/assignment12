@@ -33,8 +33,6 @@
 display: inline;
 padding-bottom: 50px;
 width: 12%;
-order: 3;
-flex-grow:2;
 }
 
 
@@ -43,18 +41,23 @@ flex-grow:2;
   width: 12%;
   order: 1;
   flex-grow:2;
+  position: flex;
+  background-color: yellow;
+
 }
 
 
   .regform{padding-top:50px;
-    position:center;
+    position:flex;
     border: 2px red solid;
     width:auto;
     order: 2;
     flex-grow: 1;
+    background-color: blue;
   }
   .flex{
-    display: flex;
+    float: right;
+    background-color: red;
   }
 
 .flex > *{
@@ -81,7 +84,11 @@ ul,li{
     background-color: teal;
     font-style: normal;
   }
-}
+
+  .topdiv{
+    width: 100%;
+  }
+
   </style>
 
 
@@ -93,7 +100,7 @@ ul,li{
 
 
 <body>
-
+<div class="topdiv">
   <section class="flex">
 
         <nav class="topnavbar">
@@ -102,18 +109,22 @@ ul,li{
              <li> <a href="../Index.html"> LOGOUT</a> </li>
         </ul>
         </nav>
+      </section>
 
+</div>
 
+<section>
         <nav class="sidenavbar">
         <ul>
           <li> <a href="../personalinfo.html" > Personal Information  </a> </li>
           <li> <a href="../riskfactor.html"> Risk Factors</a> </li>
           <li> <a href="../hepatitis_b_case_reporting_form.pdf" target="_blank"> Hepatitis B Form  </a> </li>
           <li> <a href="../congenital-syphilis-form-2013.pdf" target="_blank"> Congenital Syphilis Form</a> </li>
-          <li> <a href="../chlamydia_and_gonorrhea_case_reporting_form.pdf" target="_blank"> Chlamydia & Gonorrhea Form  </a> </li>
+          <li> <a href="../chlamydia_gonorrhea_case_reporting.html" target="_blank"> Chlamydia & Gonorrhea Form  </a> </li>
 
         </ul>
         </nav>
+      
 
 
 
